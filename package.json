@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js",
 "build": "cd frontend && npm install && npm run build",
-    "serve": "node backend/server.js",
+    "serve": "cd backend && npm install && node server.js",
     "heroku-prebuild": "cd frontend && npm install --dev"
   },
   "repository": {
