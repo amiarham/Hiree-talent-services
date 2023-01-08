@@ -62,9 +62,9 @@ export default function ProductScreen(props) {
         <MessageBox variant='danger'>{error}</MessageBox>
       ) : (
         <div>
-          <Link style={{ textDecoration: "none", fontColor: "gray" }} to='/'>
-            Back to result
-          </Link>
+          <Link
+            style={{ textDecoration: "none", fontColor: "gray" }}
+            to='/'></Link>
           <div className='row top'>
             <div className='col-2'>
               <img
@@ -72,7 +72,7 @@ export default function ProductScreen(props) {
                 src={product.image}
                 alt={product.name}></img>
             </div>
-            <div className='col-1'>
+            <div className='col-2'>
               <ul>
                 <li>
                   <h1>{product.name}</h1>
@@ -85,7 +85,7 @@ export default function ProductScreen(props) {
                 <li>Price : ${product.price}</li>
                 <li>
                   Description:
-                  <p>{product.description}</p>
+                  <p style={{ maxWidth: "430px" }}>{product.description}</p>
                 </li>
               </ul>
             </div>
@@ -114,9 +114,9 @@ export default function ProductScreen(props) {
                       <div>Status</div>
                       <div>
                         {product.countInStock > 0 ? (
-                          <span className='success'>In Stock</span>
+                          <span className='success'>Open for work</span>
                         ) : (
-                          <span className='danger'>Unavailable</span>
+                          <span className='danger'>Out for Work</span>
                         )}
                       </div>
                     </div>

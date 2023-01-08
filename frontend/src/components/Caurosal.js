@@ -29,26 +29,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "3d-react-carousal";
 export default function Caurosal() {
   var slides = [
-    <img
-      height={"400px"}
-      src='https://img.freepik.com/free-vector/banner-online-offline-system_107791-2042.jpg?w=900&t=st=1670925959~exp=1670926559~hmac=d20a700f4292540523f1cf253cf6d387160f46dc3fb177ec5b82b479d827dd3c'
-      alt='1'
-    />,
-    <img
-      height={"400px"}
-      src='https://img.freepik.com/free-vector/customers-tools-store-illustration_1441-3969.jpg?t=st=1670925803~exp=1670926403~hmac=eaeaea5f3b8a6e8b215dd59eac27c9c6fb8126bd8abb9f120f3c6a49d372a26c'
-      alt='2'
-    />,
-    <img
-      height={"400px"}
-      src='https://img.freepik.com/free-vector/supermarket-with-food-shelves-illustration_1262-16618.jpg?w=900&t=st=1670926002~exp=1670926602~hmac=361bad120c7be35b7f2f4efed1231eb44d66d137adeda136e96fd44f5e53ca4f'
-      alt='3'
-    />,
-    <img
-      height={"400px"}
-      src='https://img.freepik.com/free-vector/japanese-konbini-shop-with-seller-give-products-consumer_107791-5147.jpg?w=996&t=st=1670926167~exp=1670926767~hmac=f65c5ee7133542a0fb70fa8ca262c9c057ca17716c1004486e9f0f678e9a7b9f'
-      alt='4'
-    />,
+    <img height={"400px"} src='./slides/slide1.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide2.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide3.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide4.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide5.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide6.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide7.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide8.png' alt='1' />,
+    <img height={"400px"} src='./slides/slide9.png' alt='1' />,
   ];
   return <Carousel slides={slides} autoplay={true} interval={4000} />;
 }

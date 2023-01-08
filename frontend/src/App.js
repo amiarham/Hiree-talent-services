@@ -63,7 +63,7 @@ function App() {
               type='button'
               className='open-sidebar'
               onClick={() => setSidebarIsOpen(true)}>
-              <i className='fa fa-bars'></i>
+              <i className='fa fa-solid fa-bars'></i>
             </button>
             <Link className='brand' to='/'>
               HIREE
@@ -72,7 +72,7 @@ function App() {
           <div>
             <SearchBox />
           </div>
-          <div>
+          <div style={{}}>
             <Link to='/cart'>
               Cart
               {cartItems.length > 0 && (
@@ -142,7 +142,9 @@ function App() {
             )}
           </div>
         </header>
-        <aside className={sidebarIsOpen ? "open" : ""}>
+        <aside
+          style={{ opacity: "0.9" }}
+          className={sidebarIsOpen ? "open" : ""}>
           <ul className='categories'>
             <li>
               <strong>Categories</strong>
@@ -306,7 +308,7 @@ function App() {
         </main>
         <footer className='row center'>
           {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
-          <div>All right reserved 2022😊</div>{" "}
+          <div>All right reserved 2023</div>{" "}
         </footer>
       </div>
     </BrowserRouter>
