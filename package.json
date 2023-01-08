@@ -5,8 +5,10 @@
   "description": "Ecommerce website like amazon",
   "main": "index.js",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    "start": "nodemon --watch backend --exec babel-node backend/server.js",
+"build": "cd frontend && npm install && npm run build",
+    "serve": "cd backend && npm install && node server.js",
+    "heroku-prebuild": "cd frontend && npm install --dev"
   },
   "repository": {
     "type": "git",
