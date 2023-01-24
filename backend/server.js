@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 mongoose
   .connect(
-    "mongodb://amazonclone:arham123@ac-cd4qkqr-shard-00-00.0rix3yx.mongodb.net:27017,ac-cd4qkqr-shard-00-01.0rix3yx.mongodb.net:27017,ac-cd4qkqr-shard-00-02.0rix3yx.mongodb.net:27017/?ssl=true&replicaSet=atlas-opdirs-shard-0&authSource=admin&retryWrites=true&w=majority"
+    "MONGO_DB KEY"
   )
   .then(() => {
     console.log("Connected to the Database. Yayzow!");
